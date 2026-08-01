@@ -6,11 +6,19 @@
   },
   "packages": [
     {
+      "name": "event-loop-lab",
+      "version": "1.0.0",
+      "type": "gui",
+      "description": "Interactive scheduler-backed LumiaSDK event wait, timeout, timer, input, and window-event diagnostics",
+      "size": 7672,
+      "dependencies": []
+    },
+    {
       "name": "lumia-dashboard",
       "version": "1.0.0",
       "type": "gui",
-      "description": "A LumiaSDK dashboard for GUI events, timers, notifications, clipboard, buttons, and progress widgets",
-      "size": 4436,
+      "description": "A LumiaSDK dashboard for GUI events, timers, notifications, clipboard, tabs, lists, scroll containers, and context menus",
+      "size": 7280,
       "dependencies": []
     },
     {
