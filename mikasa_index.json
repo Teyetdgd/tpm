@@ -9,19 +9,33 @@
       "name": "lumia-dashboard",
       "version": "1.0.0",
       "type": "gui",
-      "description": "A LumiaSDK dashboard for GUI events, timers, notifications, clipboard, buttons, and progress widgets"
+      "description": "A LumiaSDK dashboard for GUI events, timers, notifications, clipboard, buttons, and progress widgets",
+      "size": 4436,
+      "dependencies": []
+    },
+    {
+      "name": "lumia-control-center",
+      "version": "1.0.0",
+      "type": "gui",
+      "description": "A large multi-panel LumiaSDK operations dashboard for package transfer and SDK integration testing",
+      "size": 2103348,
+      "dependencies": []
     },
     {
       "name": "pocket-notes",
       "version": "1.0.0",
       "type": "gui",
-      "description": "A compact graphical note editor with VFS persistence and clipboard support"
+      "description": "A compact graphical note editor with VFS persistence and clipboard support",
+      "size": 4256,
+      "dependencies": []
     },
     {
       "name": "wave-deck",
       "version": "1.0.0",
       "type": "gui",
-      "description": "A graphical WAV player with transport, seek, and volume controls"
+      "description": "A graphical WAV player with transport, seek, and volume controls",
+      "size": 3972,
+      "dependencies": []
     }
   ]
 }
