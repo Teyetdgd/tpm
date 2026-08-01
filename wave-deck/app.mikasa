@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "name": "wave-deck",
+  "displayName": "Wave Deck",
+  "version": "1.0.0",
+  "description": "A graphical WAV transport and mixer made with LumiaSDK widgets.",
+  "type": "gui",
+  "entry": "src/main.c",
+  "output": "build/wave-deck.lxe",
+  "license": "GPL-3.0-or-later",
+  "authors": ["LumiaOS SDK Team"],
+  "lumiaos": ">=0.9.59",
+  "sdk": ">=1.0.0",
+  "permissions": ["gui.window", "filesystem.read", "audio.output"],
+  "sources": ["src/main.c"]
+}
