@@ -14,6 +14,8 @@ make LUMIA_SDK=/path/to/Lumia-OS/sdk/toolchain
 The current applications are:
 
 - `lumia-dashboard`: GUI system clock, timers, notifications, clipboard, and events.
+- `lumia-control-center`: multi-panel operations dashboard with a 2 MiB
+  diagnostics dataset for Mikasa transfer and SDK integration testing.
 - `pocket-notes`: GUI text editor with VFS persistence and clipboard actions.
 - `wave-deck`: GUI WAV player with transport controls, seek, and volume.
 

@@ -9,6 +9,7 @@
       "name": "event-loop-lab",
       "version": "1.0.0",
       "type": "gui",
+      "alias": "ell",
       "description": "Interactive scheduler-backed LumiaSDK event wait, timeout, timer, input, and window-event diagnostics",
       "size": 7672,
       "dependencies": []
@@ -43,6 +44,15 @@
       "type": "gui",
       "description": "A graphical WAV player with transport, seek, and volume controls",
       "size": 3972,
+      "dependencies": []
+    },
+    {
+      "name": "nexus-hub",
+      "version": "1.0.0",
+      "type": "gui",
+      "alias": "nexus",
+      "description": "A comprehensive LumiaSDK demonstration hub showcasing App Storage, Async Events, Sockets, and Audio APIs",
+      "size": 5000,
       "dependencies": []
     }
   ]

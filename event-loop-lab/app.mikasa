@@ -7,6 +7,8 @@
   "type": "gui",
   "entry": "src/main.c",
   "output": "build/event-loop-lab.lxe",
+  "artifactName": "event-loop-lab.lxe",
+  "alias": "ell",
   "license": "GPL-3.0-or-later",
   "authors": ["LumiaOS SDK Team"],
   "lumiaos": ">=0.9.59",
