@@ -9,7 +9,7 @@ SRCS = src/main.c src/core/state.c src/core/event_loop.c \
        src/platform/storage.c src/platform/notifications.c \
        src/utils/string_utils.c
 
-OBJS = $(patsubst src/%.c, build/%.o, $(SRCS)) build/lumia_sys.o build/crt0.o
+OBJS = build/crt0.o $(patsubst src/%.c, build/%.o, $(SRCS)) build/lumia_sys.o
 
 .PHONY: all clean dirs
 
