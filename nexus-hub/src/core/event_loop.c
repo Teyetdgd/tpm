@@ -36,17 +36,10 @@ void event_loop_run(NexusContext* ctx) {
                 window_request_redraw(ctx);
             }
             else if (ev.type == LUMIA_EVENT_WINDOW_RESIZE ||
-                     ev.type == LUMIA_EVENT_WINDOW_MOVE ||
                      ev.type == LUMIA_EVENT_WINDOW_MAXIMIZE ||
-                     ev.type == LUMIA_EVENT_WINDOW_RESTORE ||
-                     ev.type == LUMIA_EVENT_MOUSE_MOVE ||
-                     ev.type == LUMIA_EVENT_MOUSE_UP) {
+                     ev.type == LUMIA_EVENT_WINDOW_RESTORE) {
                 window_request_redraw(ctx);
             }
-        } else {
-            // Timeout pass (33ms - 30 FPS): re-render interface
-            window_request_redraw(ctx);
         }
     }
 }
-

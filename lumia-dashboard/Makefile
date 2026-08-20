@@ -7,7 +7,7 @@ LD ?= ld
 .PHONY: all clean
 all: build/$(APP).lxe
 
-build/$(APP).lxe: src/main.c
+build/$(APP).lxe: src/main.c $(LUMIA_LXE_DEPS)
 	mkdir -p build
 	$(CC) $(LUMIA_CFLAGS) -c src/main.c -o build/main.o
 	$(CC) $(LUMIA_CFLAGS) -c $(LUMIA_SDK)/lumia_sys.c -o build/lumia_sys.o
@@ -18,4 +18,3 @@ build/$(APP).lxe: src/main.c
 
 clean:
 	rm -rf build
-
