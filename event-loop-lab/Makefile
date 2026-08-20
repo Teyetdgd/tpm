@@ -5,7 +5,7 @@ CC ?= gcc
 LD ?= ld
 
 .PHONY: all clean
-all: build/$(APP).lxe
+all: build/$(APP).lxe build/$(APP).lxe.sha256
 
 build/$(APP).lxe: src/main.c $(LUMIA_LXE_DEPS)
 	mkdir -p build
@@ -15,7 +15,9 @@ build/$(APP).lxe: src/main.c $(LUMIA_LXE_DEPS)
 	$(LD) -m elf_i386 -T $(LUMIA_SDK)/linker.ld --emit-relocs -nostdlib build/crt0.o build/main.o build/lumia_sys.o -o build/$(APP).elf
 	$(MAKE) -C $(LUMIA_SDK) elf2lxe
 	$(LUMIA_SDK)/elf2lxe build/$(APP).elf build/$(APP).lxe --ring3
-	sha256sum build/$(APP).lxe | awk '{print $$1}' > build/$(APP).lxe.sha256
+
+build/$(APP).lxe.sha256: build/$(APP).lxe
+	sha256sum $< | awk '{print $$1}' > $@
 
 clean:
 	rm -rf build
