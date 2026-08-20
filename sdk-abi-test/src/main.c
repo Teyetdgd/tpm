@@ -2,13 +2,15 @@
 
 static int win_id;
 
-static void touch_apis(void) {
+static int touch_apis(void) {
     int fd;
-    (void)lumia_sdk_version();
-    (void)lumia_sdk_capabilities();
+    if (lumia_sdk_version() != LUMIA_SDK_VERSION) return 0;
+    if ((lumia_sdk_capabilities() & LUMIA_CAP_ALL) != LUMIA_CAP_ALL) return 0;
+    if (lumia_permission_grants() != (LUMIA_PERMISSION_GUI | LUMIA_PERMISSION_NETWORK)) return 0;
     (void)lumia_error_string(LUMIA_EACCES);
     fd = net_socket(LUMIA_AF_INET, LUMIA_SOCK_STREAM, 0);
     if (fd >= 0) fs_close(fd);
+    return fd >= 0;
 }
 
 static void log_line(const char* line) {
@@ -41,7 +43,11 @@ int lumia_main(int argc, char** argv) {
     int running = 1;
     (void)argc; (void)argv;
     log_line("[SDK-ABI] LumiaSDK serial diagnostic started");
-    touch_apis();
+    if (!touch_apis()) {
+        log_line("[SDK-ABI] ABI 1.0 FAIL");
+        return 2;
+    }
+    log_line("[SDK-ABI] ABI 1.0 PASS");
     log_line("[SDK-ABI] ABI version and capabilities queried");
     log_line("[SDK-ABI] Error-string lookup queried");
     log_line("[SDK-ABI] Socket descriptor creation/closure queried");
@@ -72,4 +78,3 @@ int lumia_main(int argc, char** argv) {
     log_line("[SDK-ABI] Diagnostic finished");
     return 0;
 }
-

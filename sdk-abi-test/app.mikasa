@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "name": "sdk-abi-test",
+  "displayName": "SDK ABI Test",
+  "version": "1.0.0",
+  "type": "gui",
+  "entry": "src/main.c",
+  "output": "build/sdk-abi-test.lxe",
+  "sdk": ">=1.0.0",
+  "permissions": ["gui.window", "network"],
+  "sources": ["src/main.c"]
+}

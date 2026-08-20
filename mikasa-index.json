@@ -11,7 +11,17 @@
       "type": "gui",
       "alias": "ell",
       "description": "Interactive scheduler-backed LumiaSDK event wait, timeout, timer, input, and window-event diagnostics",
-      "size": 7672,
+      "size": 13760,
+      "sha256": "053d51b23727a4b02657c28b7ad31eccf4b5803b70f0ddd1b32219daea3f205c",
+      "dependencies": []
+    },
+    {
+      "name": "frame-lab",
+      "version": "1.0.0",
+      "type": "gui",
+      "description": "A LumiaSDK frame, drawing, and window rendering diagnostics application",
+      "size": 11732,
+      "sha256": "f2a116a9755353d5f4eef4bbaca40762014292332d44101ea65c1f7c34de1f5e",
       "dependencies": []
     },
     {
@@ -19,7 +29,8 @@
       "version": "1.0.0",
       "type": "gui",
       "description": "A LumiaSDK dashboard for GUI events, timers, notifications, clipboard, tabs, lists, scroll containers, and context menus",
-      "size": 7280,
+      "size": 13724,
+      "sha256": "20b64211e8524051fcf2afa90bfa3a234c5e72428010a9e80c43adce485c3b33",
       "dependencies": []
     },
     {
@@ -27,7 +38,8 @@
       "version": "1.0.0",
       "type": "gui",
       "description": "A large multi-panel LumiaSDK operations dashboard for package transfer and SDK integration testing",
-      "size": 2103348,
+      "size": 2110880,
+      "sha256": "9f344c443a52b5a1da595e206ac3d5c04a4e2681bf55dcb0023f88d313484dba",
       "dependencies": []
     },
     {
@@ -35,7 +47,8 @@
       "version": "1.0.0",
       "type": "gui",
       "description": "A compact graphical note editor with VFS persistence and clipboard support",
-      "size": 4256,
+      "size": 11412,
+      "sha256": "a338b852fcc6b5dd6452a57a5de92a93e260d35511b7daa0b4eb23ca95ec8912",
       "dependencies": []
     },
     {
@@ -43,7 +56,8 @@
       "version": "1.0.0",
       "type": "gui",
       "description": "A graphical WAV player with transport, seek, and volume controls",
-      "size": 3972,
+      "size": 11028,
+      "sha256": "51bd3de4a424343e9835b41686998cc164a691c07d88b283c2d25af430c8612d",
       "dependencies": []
     },
     {
@@ -52,9 +66,27 @@
       "type": "gui",
       "alias": "nexus",
       "description": "A comprehensive LumiaSDK demonstration hub showcasing App Storage, Async Events, Sockets, and Audio APIs",
-      "size": 5000,
+      "size": 14996,
+      "sha256": "6bbd9dc2c1446009e527ad47bccf2f770f5e96d180507418da582aa661ba184b",
+      "dependencies": []
+    },
+    {
+      "name": "notif-center",
+      "version": "1.0.0",
+      "type": "gui",
+      "description": "A LumiaSDK notification center and notification API diagnostics application",
+      "size": 13216,
+      "sha256": "ca9ccc70bda1efd7dd6152555463009e875cf19023553a3685dd6e7293a4e9fb",
+      "dependencies": []
+    },
+    {
+      "name": "sdk-abi-test",
+      "version": "1.0.0",
+      "type": "tui",
+      "description": "A LumiaSDK ABI and runtime compatibility test suite",
+      "size": 12540,
+      "sha256": "deb7f4e1d014eeb0a0b23fc622922e64d0f51edaaf7590bf11efd45a199667c5",
       "dependencies": []
     }
   ]
 }
-
