@@ -11,8 +11,8 @@
       "type": "gui",
       "alias": "ell",
       "description": "Interactive scheduler-backed LumiaSDK event wait, timeout, timer, input, and window-event diagnostics",
-      "size": 13760,
-      "sha256": "053d51b23727a4b02657c28b7ad31eccf4b5803b70f0ddd1b32219daea3f205c",
+      "size": 14464,
+      "sha256": "7b85fc371f0c35f73f7d72f58c76a7aefbdb3809db4043287baeb5ddc5312f82",
       "dependencies": []
     },
     {
@@ -20,8 +20,8 @@
       "version": "1.0.0",
       "type": "gui",
       "description": "A LumiaSDK frame, drawing, and window rendering diagnostics application",
-      "size": 11732,
-      "sha256": "f2a116a9755353d5f4eef4bbaca40762014292332d44101ea65c1f7c34de1f5e",
+      "size": 13588,
+      "sha256": "0c4b81d2c02e768d2c89b268101b85d9a167b6b9881dab9eb5c0e069a374522f",
       "dependencies": []
     },
     {
@@ -29,8 +29,8 @@
       "version": "1.0.0",
       "type": "gui",
       "description": "A LumiaSDK dashboard for GUI events, timers, notifications, clipboard, tabs, lists, scroll containers, and context menus",
-      "size": 13724,
-      "sha256": "20b64211e8524051fcf2afa90bfa3a234c5e72428010a9e80c43adce485c3b33",
+      "size": 14684,
+      "sha256": "457031ec8e2f98c86511ab66e1335c288d4236286bccce9ab8837c8f339529c3",
       "dependencies": []
     },
     {
@@ -38,8 +38,8 @@
       "version": "1.0.0",
       "type": "gui",
       "description": "A large multi-panel LumiaSDK operations dashboard for package transfer and SDK integration testing",
-      "size": 2110880,
-      "sha256": "9f344c443a52b5a1da595e206ac3d5c04a4e2681bf55dcb0023f88d313484dba",
+      "size": 2111264,
+      "sha256": "a6b2232db8df7c9341679422f27ef737a15f5be54dfbbd7150e6132341b3cc0d",
       "dependencies": []
     },
     {
@@ -47,8 +47,8 @@
       "version": "1.0.0",
       "type": "gui",
       "description": "A compact graphical note editor with VFS persistence and clipboard support",
-      "size": 11412,
-      "sha256": "a338b852fcc6b5dd6452a57a5de92a93e260d35511b7daa0b4eb23ca95ec8912",
+      "size": 13620,
+      "sha256": "a0a80b7e31c4c785244351898a55c258bbfdf99721bbcc0cd257931ca409499b",
       "dependencies": []
     },
     {
@@ -56,8 +56,8 @@
       "version": "1.0.0",
       "type": "gui",
       "description": "A graphical WAV player with transport, seek, and volume controls",
-      "size": 11028,
-      "sha256": "51bd3de4a424343e9835b41686998cc164a691c07d88b283c2d25af430c8612d",
+      "size": 13460,
+      "sha256": "16f1645cc1d932002dd8f8909b75eadfa0a2cc4c058c291a4e84f5acf2da5cd2",
       "dependencies": []
     },
     {
@@ -66,8 +66,8 @@
       "type": "gui",
       "alias": "nexus",
       "description": "A comprehensive LumiaSDK demonstration hub showcasing App Storage, Async Events, Sockets, and Audio APIs",
-      "size": 14996,
-      "sha256": "6bbd9dc2c1446009e527ad47bccf2f770f5e96d180507418da582aa661ba184b",
+      "size": 18516,
+      "sha256": "a0a319c331a1a8e924deb2f57ec221144734b915a6eb8e2bcc389c74a935010c",
       "dependencies": []
     },
     {
@@ -75,8 +75,8 @@
       "version": "1.0.0",
       "type": "gui",
       "description": "A LumiaSDK notification center and notification API diagnostics application",
-      "size": 13216,
-      "sha256": "ca9ccc70bda1efd7dd6152555463009e875cf19023553a3685dd6e7293a4e9fb",
+      "size": 13728,
+      "sha256": "57ec99fcf52d2ff473b9a6d5e6e214d5f9bb145bdc06ebc450ffede17019e3f0",
       "dependencies": []
     },
     {
@@ -84,8 +84,8 @@
       "version": "1.0.0",
       "type": "tui",
       "description": "A LumiaSDK ABI and runtime compatibility test suite",
-      "size": 12540,
-      "sha256": "deb7f4e1d014eeb0a0b23fc622922e64d0f51edaaf7590bf11efd45a199667c5",
+      "size": 14460,
+      "sha256": "4afdb2f5d934dfbfca48f6fbc2df590fb5c61f31887049affc76d4df29b169aa",
       "dependencies": []
     }
   ]

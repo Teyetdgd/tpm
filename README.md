@@ -11,6 +11,15 @@ Set `LUMIA_SDK` to the LumiaSDK toolchain directory and build all applications:
 make LUMIA_SDK=/path/to/Lumia-OS/sdk/toolchain
 ```
 
+The top-level Makefile also regenerates every `.lxe.sha256` sidecar and updates
+the matching `size` and `sha256` fields in `mikasa-index.json`. Do not publish
+an individually rebuilt LXE without running the top-level make first. Verify a
+prepared package tree without changing it with:
+
+```bash
+make verify
+```
+
 The current applications are:
 
 - `lumia-dashboard`: GUI system clock, timers, notifications, clipboard, and events.
@@ -25,6 +34,6 @@ Mikasa package metadata and requested permissions.
 For a Mikasa repository, keep `mikasa-index.json` at the repository root and
 place each package in its own directory. The package artifact and checksum use
 the conventional paths `<package>/build/<package>.lxe` and
-`<package>/build/<package>.lxe.sha256`. Running `make` builds all three apps and
-regenerates their checksum sidecars.
-
+`<package>/build/<package>.lxe.sha256`. Publish the updated index, LXE and
+sidecar in the same repository update; Mikasa rejects any combination that
+does not describe the exact same bytes.
