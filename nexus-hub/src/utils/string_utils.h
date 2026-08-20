@@ -3,5 +3,7 @@
 
 void string_itoa(int n, char* buf);
 void string_concat(const char* s1, const char* s2, char* out);
+void string_copy(char* dst, const char* src);
 
 #endif
+

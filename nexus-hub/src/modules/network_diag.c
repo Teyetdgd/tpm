@@ -9,3 +9,4 @@ int network_diag_run(void) {
     }
     return 0;
 }
+

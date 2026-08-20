@@ -7,3 +7,4 @@ the first argument; the default is `test.wav`.
 ```bash
 make LUMIA_SDK=/path/to/Lumia-OS/sdk/toolchain
 ```
+

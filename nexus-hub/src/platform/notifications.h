@@ -4,3 +4,4 @@
 void notify_show(const char* title, const char* message);
 
 #endif
+

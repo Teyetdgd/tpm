@@ -16,3 +16,13 @@ void string_concat(const char* s1, const char* s2, char* out) {
     while (s2[j]) { out[i++] = s2[j++]; }
     out[i] = 0;
 }
+
+void string_copy(char* dst, const char* src) {
+    int i = 0;
+    while (src[i]) {
+        dst[i] = src[i];
+        i++;
+    }
+    dst[i] = 0;
+}
+

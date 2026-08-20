@@ -14,3 +14,4 @@
   "permissions": ["gui.window", "filesystem.read", "filesystem.write", "clipboard.read", "clipboard.write"],
   "sources": ["src/main.c"]
 }
+

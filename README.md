@@ -27,3 +27,4 @@ place each package in its own directory. The package artifact and checksum use
 the conventional paths `<package>/build/<package>.lxe` and
 `<package>/build/<package>.lxe.sha256`. Running `make` builds all three apps and
 regenerates their checksum sidecars.
+

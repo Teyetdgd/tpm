@@ -14,3 +14,4 @@
   "permissions": ["gui.window", "filesystem.read", "audio.output"],
   "sources": ["src/main.c"]
 }
+

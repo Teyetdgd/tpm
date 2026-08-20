@@ -7,3 +7,4 @@ void widgets_draw_sidebar(NexusContext* ctx);
 void widgets_handle_click(NexusContext* ctx, int x, int y);
 
 #endif
+

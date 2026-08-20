@@ -158,3 +158,4 @@ int lumia_main(int argc, char** argv) {
     sys_gui_close_window(win_id);
     return 0;
 }
+

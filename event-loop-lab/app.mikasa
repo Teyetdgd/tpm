@@ -16,3 +16,4 @@
   "permissions": ["gui.window", "timer"],
   "sources": ["src/main.c"]
 }
+

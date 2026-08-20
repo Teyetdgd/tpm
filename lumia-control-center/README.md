@@ -8,3 +8,4 @@ Its deterministic 2 MiB diagnostics dataset is part of the application and
 makes the LXE useful for validating Mikasa's progress, throughput, and ETA.
 
 Build it from the parent directory with `make lumia-control-center`.
+

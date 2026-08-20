@@ -14,3 +14,4 @@
   "permissions": ["gui.window", "filesystem.read", "filesystem.write", "notifications", "clipboard.read", "clipboard.write", "timer"],
   "sources": ["src/main.c"]
 }
+

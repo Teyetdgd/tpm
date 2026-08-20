@@ -9,3 +9,4 @@ make LUMIA_SDK=/path/to/Lumia-OS/sdk/toolchain
 ```
 
 Run `build/lumia-dashboard.lxe` with the LumiaOS `run` command.
+

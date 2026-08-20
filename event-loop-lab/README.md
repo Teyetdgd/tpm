@@ -12,3 +12,4 @@ resize activity increments the matching counters.
 Press `T` to stop the event timer. With no input, a three-second wait should
 expire and increase the timeout counter. Press `T` again to restore the
 one-second repeating timer, `R` to reset counters, or `Q` to exit.
+

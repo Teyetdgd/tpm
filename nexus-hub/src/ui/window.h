@@ -8,3 +8,4 @@ void window_destroy(int win_id);
 void window_request_redraw(NexusContext* ctx);
 
 #endif
+

@@ -15,3 +15,4 @@ typedef struct {
 NexusTheme theme_get_current(int is_dark);
 
 #endif
+

@@ -13,3 +13,4 @@ void storage_save_theme_preference(int is_dark) {
     char conf_data[2] = { is_dark ? '1' : '0', 0 };
     config_write_file("nexus-hub", "theme.cfg", conf_data, 2);
 }
+

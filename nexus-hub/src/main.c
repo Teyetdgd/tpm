@@ -13,7 +13,7 @@ int lumia_main(int argc, char** argv) {
 
     ctx.win_id = window_create();
     if (ctx.win_id < 0) return -1;
-    
+
     // Start an event timer (1000ms, repeat)
     ctx.timer_id = event_timer_create(ctx.win_id, 1000, 1);
 
@@ -25,3 +25,4 @@ int lumia_main(int argc, char** argv) {
     window_destroy(ctx.win_id);
     return 0;
 }
+

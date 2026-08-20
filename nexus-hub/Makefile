@@ -1,5 +1,6 @@
 APP := nexus-hub
 LUMIA_SDK ?= ../../sdk/toolchain
+include $(LUMIA_SDK)/lumia.mk
 CC ?= gcc
 LD ?= ld
 
@@ -19,10 +20,10 @@ dirs:
 	mkdir -p build/core build/ui build/modules build/platform build/utils
 
 build/%.o: src/%.c
-	$(CC) -m32 -ffreestanding -nostdlib -fno-builtin -fno-stack-protector -fno-exceptions -O2 -Wall -Wextra -I$(LUMIA_SDK) -c $< -o $@
+	$(CC) $(LUMIA_CFLAGS) -c $< -o $@
 
 build/lumia_sys.o: $(LUMIA_SDK)/lumia_sys.c
-	$(CC) -m32 -ffreestanding -nostdlib -fno-builtin -fno-stack-protector -fno-exceptions -O2 -Wall -Wextra -I$(LUMIA_SDK) -c $< -o $@
+	$(CC) $(LUMIA_CFLAGS) -c $< -o $@
 
 build/crt0.o: $(LUMIA_SDK)/crt0.s
 	nasm -f elf32 $< -o $@
@@ -31,6 +32,8 @@ build/$(APP).lxe: $(OBJS)
 	$(LD) -m elf_i386 -T $(LUMIA_SDK)/linker.ld --emit-relocs -nostdlib $(OBJS) -o build/$(APP).elf
 	$(MAKE) -C $(LUMIA_SDK) elf2lxe
 	$(LUMIA_SDK)/elf2lxe build/$(APP).elf build/$(APP).lxe --ring3
+	sha256sum build/$(APP).lxe | awk '{print $$1}' > build/$(APP).lxe.sha256
 
 clean:
 	rm -rf build
+

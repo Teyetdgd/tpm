@@ -17,6 +17,8 @@ void window_destroy(int win_id) {
 
 void window_request_redraw(NexusContext* ctx) {
     if (ctx->win_id >= 0) {
+        layout_update_metrics(ctx);   // win_w/win_h track maximize/resize
         layout_render_all(ctx);
     }
 }
+
