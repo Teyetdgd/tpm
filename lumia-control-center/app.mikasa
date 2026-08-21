@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "name": "lumia-control-center",
+  "displayName": "Lumia Control Center",
+  "version": "1.0.0",
+  "description": "A multi-panel system operations dashboard and large-package integration test.",
+  "type": "gui",
+  "entry": "src/main.c",
+  "output": "build/lumia-control-center.lxe",
+  "license": "GPL-3.0-or-later",
+  "authors": ["LumiaOS SDK Team"],
+  "lumiaos": ">=0.9.59",
+  "sdk": ">=1.0.0",
+  "permissions": ["gui.window", "filesystem.read", "filesystem.write", "notifications", "clipboard.read", "clipboard.write", "timer"],
+  "sources": ["src/main.c"]
+}
+

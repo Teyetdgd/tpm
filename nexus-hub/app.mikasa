@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "name": "nexus-hub",
+  "displayName": "Nexus Hub",
+  "version": "1.0.0",
+  "type": "gui",
+  "entry": "src/main.c",
+  "output": "build/nexus-hub.lxe",
+  "sdk": ">=1.0.0",
+  "permissions": ["gui.window", "network", "audio.output", "notifications", "timer", "process", "app.storage"],
+  "sources": ["src/main.c"]
+}

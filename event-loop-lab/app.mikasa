@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "name": "event-loop-lab",
+  "displayName": "Event Loop Lab",
+  "version": "1.0.0",
+  "description": "Interactive scheduler-backed LumiaSDK event wait diagnostics.",
+  "type": "gui",
+  "entry": "src/main.c",
+  "output": "build/event-loop-lab.lxe",
+  "artifactName": "event-loop-lab.lxe",
+  "alias": "ell",
+  "license": "GPL-3.0-or-later",
+  "authors": ["LumiaOS SDK Team"],
+  "lumiaos": ">=0.9.59",
+  "sdk": ">=1.0.0",
+  "permissions": ["gui.window", "timer"],
+  "sources": ["src/main.c"]
+}
+
